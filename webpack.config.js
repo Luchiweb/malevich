@@ -2,20 +2,23 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    // Set the mode to development or production
-    mode: 'development',
-
-    // Path to your entry point. From this file Webpack will begin his work
     entry: './src/index.js',
 
-    // Path and filename of your result bundle.
-    // Webpack will bundle all JavaScript into this file
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
 
-    // Webpack rules and plugins
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
+        compress: true,
+        port: 8080,
+        historyApiFallback: true,
+        watchFiles: './src/index.html',
+    },
+
     module: {
         rules: [
             {
@@ -24,19 +27,28 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    require('tailwindcss'),
+                                    require('autoprefixer'),
+                                ],
+                            },
+                        },
+                    },
+                ],
             }
         ]
     },
+
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
         })
     ],
-
-    // Default mode for Webpack is production.
-    // Depending on mode Webpack will apply different things
-    // on final bundle. For now we don't care about it
-    // but in future we will learn much more about it
-    mode: 'development'
 };

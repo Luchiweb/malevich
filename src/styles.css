@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --main-color: #bda23e;
+    }
+}
+
+@layer components {
+    .container {
+        @apply px-4 md:px-10 flex items-center justify-between max-w-[1400px] mx-auto;
+    }
+
+    .primary-button {
+        @apply uppercase tracking-wider text-sm rounded-md transition-colors duration-300 disabled:pointer-events-none disabled:opacity-50 text-white hover:bg-[#C7AE4C] bg-main-color px-4 py-2;
+    }
+
+    .secondary-button {
+        @apply uppercase tracking-wider text-sm rounded-md transition-colors duration-300 disabled:pointer-events-none disabled:opacity-50 text-white bg-black hover:bg-zinc-800 px-4 py-2;
+    }
+}
+
+body {
+    /* font-family: 'Cormorant Infant', serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-image: url("./images/bg-03.jpg");
+}
