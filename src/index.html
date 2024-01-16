@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Malevich Photobook</title>
 </head>
 
-<body>
+<body class="">
     <div class="">
-        <header class="header text-xl flex justify-between fixed top-0 w-full">
+        <header class="header text-xl flex justify-between fixed top-0 w-full z-20">
             <div class="container py-4">
                 <img src="./images/logo_header.svg" class="max-h-12" alt="logo">
                 <nav class="flex items-center gap-6 text-sm text-main-color">
@@ -28,6 +29,36 @@
                 </div>
             </div>
         </header>
+        <div class="first-screen pt-36 ">
+            <div class="container items-center">
+                <div class="max-w-[50%] mb-32">
+                    <h1 class="text-5xl text-white title mb-10">Cтильнi фотокниги високої якостi</h1>
+                    <ul class="icon-list text-white text-md font-light max-w-96 grayscale">
+                        <li>Працюємо тільки з фотографами і дизайнерами</li>
+                        <li>Завжди передбачуваний результат друку</li>
+                        <li>Доставка по всій Україні</li>
+                    </ul>
+                </div>
+                <div class="swiper mySwiper self-end relative z-10 max-w-[60%]">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide"><img src="./images/books-01.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/books-02.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/books-03.png" alt=""></div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gradient flex w-full overflow-x-hidden max-h-[1000px]">
+        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+    </div>
     </div>
 </body>
 
