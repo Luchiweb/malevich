@@ -18,22 +18,21 @@
         @apply px-4 md:px-10 flex items-center justify-between max-w-[1250px] mx-auto;
     }
 
-    .primary-button {
-        @apply uppercase tracking-wider text-xs rounded-md transition-colors duration-300 disabled:pointer-events-none disabled:opacity-50 text-white hover:bg-[#C7AE4C] bg-main-color px-4 py-2;
+    .button {
+        @apply uppercase tracking-wider leading-5 text-[10px] md:text-xs rounded-md transition-colors duration-300 disabled:pointer-events-none disabled:opacity-50 text-white px-2 py-1 md:px-4 md:py-2 bg-black hover:bg-zinc-800;
     }
 
-    .secondary-button {
-        @apply uppercase tracking-wider text-xs rounded-md transition-colors duration-300 disabled:pointer-events-none disabled:opacity-50 text-white bg-black hover:bg-zinc-800 px-4 py-2;
+    .primary-button {
+        @apply bg-main-color hover:bg-[#C7AE4C];
     }
+
 }
 
 body {
-    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Montserrat', sans-serif;
 }
 
 .title {
-    /* font-family: 'Cormorant Infant', serif; */
     font-family: 'Cormorant Unicase', serif;
     line-height: 1.2;
 }
@@ -51,13 +50,16 @@ body {
     background-position: 0 center;
     margin-bottom: 20px;
     line-height: 1.6;
-    list-style-type: none;
     padding-left: 45px;
 }
 
-.gradient {
+.doted-list li {
+    list-style-type: disc
+}
+
+.secod-screen {
     position: relative;
-    top: max(-10vw, -120px)
+    top: max(-13vw, -120px)
 }
 
 .swiper-pagination-bullet-active {
@@ -65,7 +67,73 @@ body {
 }
 
 .swiper-pagination-bullet {
-    width: 24px !important;
+    width: 35px !important;
     height: 4px !important;
-    border-radius: 5px !important;
+    border-radius: 1px !important;
+}
+
+.materials {
+    background-image: url('./images/photoalbom.png');
+}
+
+.frame {
+    background-image: url('./images/ramka.jpg');
+    background-repeat: no-repeat;
+}
+
+.certificate-container {
+    position: relative;
+    display: inline-block;
+    max-width: 260px;
+    text-align: center;
+}
+
+.frame {
+    width: 100%;
+    height: auto;
+}
+
+.document {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.text-block {
+    margin-top: 10px;
+    max-width: 260px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs .tab {
+    width: 100%;
+    order: 1;
+    display: none;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs label {
+    padding: 15px;
+    color: #818181;
+    font-size: large;
+}
+
+.tabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+
+.tabs input[type="radio"]:checked+label {
+    background-color: #414141;
+    font-weight: 500;
+    color: #959595;
 }

@@ -11,10 +11,12 @@
 
 <body class="">
     <div class="">
-        <header class="header text-xl flex justify-between fixed top-0 w-full z-20">
-            <div class="container py-4">
-                <img src="./images/logo_header.svg" class="max-h-12" alt="logo">
-                <nav class="flex items-center gap-6 text-sm text-main-color">
+        <header class="header text-xl fixed top-0 w-full z-50">
+            <div class="container py-4 flex-wrap gap-4 sm:flex-nowrap justify-between">
+                <img src="./images/logo_header.svg" class="hidden lg:block max-h-12 order-1" alt="logo">
+                <img src="./images/logo_header_xs.svg" class="lg:hidden max-h-6 order-1" alt="logo">
+                <nav
+                    class="flex items-center m-auto justify-between gap-2 md:gap-4 text-xs md:text-sm text-main-color order-3 sm:order-2">
                     <a href="https://t.me/+380995141828" target="_blank" class="flex items-center gap-2 group">
                         <img src="./images/icon-telegram.svg" alt="icon-telegram"
                             class="grayscale max-h-6 group-hover:grayscale-0">
@@ -23,23 +25,24 @@
                     <a href="https://t.me/MalevichFactoryBot">Новини</a>
                     <a href="https://sites.google.com/view/mfbook/malevich">Ми працюємо</a>
                 </nav>
-                <div class="flex gap-4">
-                    <button class="secondary-button ">Вхiд</button>
-                    <button class="primary-button">Реєстрація</button>
+                <div class="flex gap-4 order-2 sm:order-3">
+                    <button class="button">Вхiд</button>
+                    <button class="button primary-button">Реєстрація</button>
                 </div>
             </div>
         </header>
-        <div class="first-screen pt-36 ">
-            <div class="container items-center">
-                <div class="max-w-[50%] mb-32">
-                    <h1 class="text-5xl text-white title mb-10">Cтильнi фотокниги високої якостi</h1>
-                    <ul class="icon-list text-white text-md font-light max-w-96 grayscale">
+        <section class="first-screen pt-36">
+            <div class="container flex-wrap justify-center md:justify-between md:flex-nowrap gap-4 items-center">
+                <div class="md:mb-44 basis-auto md:basis:3/5 lg:basis-2/5">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl text-white title mb-10">Cтильнi фотокниги високої якостi
+                    </h1>
+                    <ul class="icon-list text-white text-md md:max-w-96 font-light grayscale">
                         <li>Працюємо тільки з фотографами і дизайнерами</li>
                         <li>Завжди передбачуваний результат друку</li>
                         <li>Доставка по всій Україні</li>
                     </ul>
                 </div>
-                <div class="swiper mySwiper self-end relative z-10 max-w-[60%]">
+                <div class="swiper mySwiper self-end relative basis-4/5 md:basis:2/5 lg:basis-3/5 z-30">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide"><img src="./images/books-01.png" alt=""></div>
@@ -50,16 +53,235 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="secod-screen">
+            <div class="z-0 flex w-full overflow-x-hidden max-h-[900px]">
+                <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+                <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+                <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+                <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+                <img class="w-full" src="./images/first_screen_gradien.png" alt="">
+            </div>
+            <div
+                class="z-10 absolute top-64 left-1/2 -translate-x-2/4 translate-y-0; text-white text-2xl font-light text-center max-w-[40vw]">
+                Ваш клієнт
+                може і не знати, що йому потрібна книга, але якщо він тримає її в руках <br><span class="font-bold"> —
+                    то эфект завжди WOW</span></div>
+            <iframe width="100%" class="video h-[100%] absolute z-[-1] top-[15vw]"
+                src="https://www.youtube.com/embed/-KAFxe8rdzY?autoplay=1&loop=1&enablejsapi=1&&playerapiid=featuredytplayer&controls=0&modestbranding=1&rel=0&showinfo=0&color=white&iv_load_policy=3&theme=light&wmode=transparent&origin=https://book.malevichpro.com&playlist=-KAFxe8rdzY&mute=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-    </div>
-    <div class="gradient flex w-full overflow-x-hidden max-h-[1000px]">
-        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
-        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
-        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
-        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
-        <img class="w-full" src="./images/first_screen_gradien.png" alt="">
-    </div>
-    </div>
+        <img src="./images/oval_1.svg" class="w-full h-32 relative" alt="">
+        <div class="bg-[#F3F3F3] hidden">
+            <div class="container">
+                <p class="text-center m-auto text-2xl opacity-50 max-w-[40vw]">Фотокниги дозволяють відчути
+                    клієнтам всю цінність фотографії, і як
+                    наслідок, краще зрозуміти важливість вашої роботи</p>
+            </div>
+            <img src="./images/screen_graphic.svg" class="pt-20" alt="">
+        </div>
+        <div class="bg-[#F3F3F3] hidden">
+            <div class="container flex-col">
+                <h2 class="text-6xl title text-center mb-5 max-w-[50%]">Ми прихильники вiчної класики</h2>
+                <p class="text-center m-auto text-2xl opacity-50 max-w-[60vw] mb-10">Тренди швидко згасають і через роки
+                    виглядають безглуздо, але простота і лаконічність завжди будуть у
+                    моді</p>
+                <div class="flex gap-6">
+                    <div class="bg-[#E5E5E5]">
+                        <img src="./images/book-01.png" class="drop-shadow-sm" alt="">
+                        <div class="uppercase">Classic</div>
+                        <div class="">collection</div>
+                    </div>
+                    <div class="bg-[#E5E5E5]">
+                        <img src="./images/book-02.png" class="drop-shadow-sm" alt="">
+                        <div class="uppercase">Photo Art</div>
+                        <div class="">collection</div>
+                    </div>
+                    <div class="bg-[#E5E5E5]">
+                        <img src="./images/book-03.png" class="drop-shadow-sm" alt="">
+                        <div class="uppercase">Grandwood</div>
+                        <div class="">collection</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <img class="relative -left-[5vw] max-h-[45vw]" src="./images/people_img.jpg" alt="">
+                <p class="text-2xl opacity-50 max-w-[60vw] mb-8">Обираючи класику, можете бути впевнені - вашою роботою
+                    будуть захоплюватися багато поколінь</p>
+            </div>
+            <div class="container flex-col">
+                <h2 class="text-6xl title text-center mb-5 max-w-[50%]">Асортимент</h2>
+                <p class="text-center m-auto text-2xl opacity-50 max-w-[60vw] mb-10">Правильний, лаконічний асортимент –
+                    основа успішних продажів</p>
+                <div class="flex gap-6 mb-14">
+                    <div class="bg-[#E5E5E5]">
+                        <div class="uppercase">Eконом</div>
+                        <img src="./images/photobook-01.png" alt="">
+                        <div class="">Детальнiше</div>
+                    </div>
+                    <div class="bg-[#E5E5E5]">
+                        <div class="uppercase">Стандарт</div>
+                        <img src="./images/photobook-02.png" alt="">
+                        <div class="">Детальнiше</div>
+                    </div>
+                    <div class="bg-[#E5E5E5]">
+                        <div class="uppercase">Преміум</div>
+                        <img src="./images/photobook-03.png" alt="">
+                        <div class="">Детальнiше</div>
+                    </div>
+                    <div class="bg-[#E5E5E5]">
+                        <div class="uppercase">Eксклюзив</div>
+                        <div class="">Детальнiше</div>
+                        <img src="./images/super.png" alt="">
+                    </div>
+                </div>
+                <div class="bg-[#4A4A4A] p-4 min-w-[60vw]">
+                    <div class="py-4 px-[15%] border border-main-color flex items-center justify-between">
+                        <img src="./images/eye.png" alt="">
+                        <div class="text-white text-lg font-light uppercase">Цiни доступнi лише пiсля <a href="#"
+                                class="underline text-main-color font-normal">реєстрації</a> <br> а реєстрація доступна
+                            лише
+                            фотографам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute max-w-[1250px] m-auto flex px-24 flex-col items-start">
+                <h2 class="text-7xl title my-52">Першокласнi <br> матерiали</h2>
+                <ul class="doted-list text-xl flex flex-col opacity-50">
+                    <li class="max-w-[25vw] ml-[10vw]">
+                        Ви отримаєте надійну книгу, яка приємно лежить в руках і не деформується
+                        через роки
+                    </li>
+                    <li class="max-w-[25vw] ml-[30vw]">Використовуємо тільки якісні матеріали, які виглядають дорого і
+                        презентабельно
+                    </li>
+                    <li class="max-w-[25vw] ml-[45vw]">Щільні листи, які не розклеюються і не мнуться</li>
+                </ul>
+            </div>
+            <img src="./images/photoalbom.png" class="max-w-[80%] ml-auto" alt="">
+            <div class="container flex-col">
+                <div class="flex justify-between w-full mb-8">
+                    <div class="uppercase text-2xl max-w-[50%] font-medium opacity-75">Безліч кольорів та текстур, що
+                        підкреслюють
+                        індивідуальність
+                    </div>
+                    <div class="flex opacity-50 items-center gap-2">
+                        <span class="text-4xl">20</span>
+                        <div class="uppercase">преміальних матеріалів</div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <input type="radio" name="tabs" id="fine_art" checked="checked">
+                    <label for="fine_art">FINE ART</label>
+                    <div class="tab"><img src="./images/fine_art.png" alt=""></div>
+
+                    <input type="radio" name="tabs" id="happy_colour">
+                    <label for="happy_colour">HAPPY COTTON</label>
+                    <div class="tab"><img src="./images/happy_colour.png" alt=""></div>
+
+                    <input type="radio" name="tabs" id="hugosoft">
+                    <label for="hugosoft">HUGOSOFT</label>
+                    <div class="tab"><img src="./images/hugosoft.png" alt=""></div>
+
+                    <input type="radio" name="tabs" id="nubuck_impress">
+                    <label for="nubuck_impress">NUBUK IMPRESS</label>
+                    <div class="tab"><img src="./images/nubuck_impress.png" alt=""></div>
+                </div>
+
+                <div class="w-full">
+                    <h2 class="text-center text-6xl m-auto title mb-5">Чудова <br> якiсть друку</h2>
+                    <p class="text-center text-2xl m-auto opacity-50 max-w-[40vw] mb-10">Нам важливо не підвести
+                        фотографа, який
+                        намагався зробити якісні знімки</p>
+                    <div class="flex justify-between items-center">
+                        <div class="relative">
+                            <div class="border-[40px] border-white"><img src="./images/bad_photo.jpg" alt=""></div>
+                            <img src="./images/cross.png" class="absolute top-5 right-5 max-w-10" alt="">
+                        </div>
+                        <div class="relative">
+                            <div class="border-[40px] border-white"><img src="./images/good_photo.jpg" alt=""></div>
+                            <img src="./images/check.png" class="absolute top-5 right-5 max-w-10" alt="">
+                        </div>
+                        <div class="max-w-[25vw]">
+                            <div class="text-xl mb-8">Ми розробили систему, в якiй гарантовано:</div>
+                            <ul class="icon-list">
+                                <li>Ваші фото вийдуть такими, як задумано</li>
+                                <li>Без пересвітів і без втрати деталей в тінях</li>
+                                <li>З мінімальним шумом</li>
+                                <li>З різкою, хорошою деталізацією</li>
+                                <li>З захистом від вигорання 100 років</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <h2 class="text-center text-6xl m-auto title mb-5">Високi стандарти</h2>
+                    <div class="flex justify-between">
+                        <div class="certificate-wrapper">
+                            <div class="certificate-container mb-6">
+                                <img src="./images/ramka.jpg" alt="Certificate Frame" class="frame">
+                                <img src="./images/dock-01.jpg" alt="ISO Certificate" class="document">
+                            </div>
+                            <div class="py-1 px-4 rounded bg-main-color w-fit text-white text-xs">ISO 9001</div>
+                            <div class="text-block">
+                                <div class="text-4xl title mb-2">Гарантiї</div>
+                                <div class="description opacity-40 text-sm">На нашому виробництві впроваджена міжнародна
+                                    система
+                                    контролю
+                                    якості. Це дозволяє нам
+                                    давати впевнену гарантію</div>
+                            </div>
+                        </div>
+                        <div class="certificate-wrapper">
+                            <div class="certificate-container mb-6">
+                                <img src="./images/ramka.jpg" alt="Certificate Frame" class="frame">
+                                <img src="./images/dock-02.jpg" alt="ISO Certificate" class="document">
+                            </div>
+                            <div class="py-1 px-4 rounded bg-main-color w-fit text-white text-xs">CEC</div>
+                            <div class="text-block">
+                                <div class="text-4xl title mb-2">Безпека</div>
+                                <div class="description opacity-40 text-sm">Матеріали, з яких виготовлені книги, не
+                                    становлять
+                                    небезпеки
+                                    для дітей</div>
+                            </div>
+                        </div>
+                        <div class="certificate-wrapper">
+                            <div class="certificate-container mb-6">
+                                <img src="./images/ramka.jpg" alt="Certificate Frame" class="frame">
+                                <img src="./images/dock-03.jpg" alt="ISO Certificate" class="document">
+                            </div>
+                            <div class="py-1 px-4 rounded bg-main-color w-fit text-white text-xs">ТУ У 17.23</div>
+                            <div class="text-block">
+                                <div class="text-4xl title mb-2">Надiйнiсть</div>
+                                <div class="description opacity-40 text-sm">Книги виробляються за стандартами ТУ.
+                                    Завдяки цьому
+                                    книги не
+                                    розклеюються, а
+                                    обкладинки не деформуються через час
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate-wrapper">
+                            <div class="certificate-container mb-6">
+                                <img src="./images/ramka.jpg" alt="Certificate Frame" class="frame">
+                                <img src="./images/dock-04.jpg" alt="ISO Certificate" class="document">
+                            </div>
+                            <div class="py-1 px-4 rounded bg-main-color w-fit text-white text-xs">Патенти</div>
+                            <div class="text-block">
+                                <div class="text-4xl title mb-2">Зарoбiток</div>
+                                <div class="description opacity-40 text-sm">Патент захищає книги від дешевих підробок і
+                                    нечесної
+                                    цінової конкуренції.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
