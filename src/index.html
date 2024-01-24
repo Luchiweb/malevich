@@ -10,7 +10,7 @@
 </head>
 
 <body class="">
-    <div class="">
+    <div class="bg-[#F3F3F3]">
         <header class="header text-xl fixed top-0 w-full z-50">
             <div class="container py-4 flex-wrap gap-4 sm:flex-nowrap justify-between">
                 <img src="./images/logo_header.svg" class="hidden lg:block max-h-12 order-1" alt="logo">
@@ -42,7 +42,7 @@
                         <li>Доставка по всій Україні</li>
                     </ul>
                 </div>
-                <div class="swiper mySwiper self-end relative basis-4/5 md:basis:2/5 lg:basis-3/5 z-30">
+                <div class="swiper mySwiper self-end relative basis-4/5 md:basis:2/5 lg:basis-3/5">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide"><img src="./images/books-01.png" alt=""></div>
@@ -54,114 +54,128 @@
                 </div>
             </div>
         </section>
-        <div class="secod-screen">
-            <div class="z-0 flex w-full overflow-x-hidden max-h-[900px]">
+        <div class="secod-screen relative overflow-hidden">
+            <div
+                class="z-10 relative flex w-full overflow-x-hidden max-h-[400px] sm:max-h-[500px] md:max-h-[600px] lg:max-h-[800px] xl:max-h-[1000px]">
                 <img class="w-full" src="./images/first_screen_gradien.png" alt="">
                 <img class="w-full" src="./images/first_screen_gradien.png" alt="">
                 <img class="w-full" src="./images/first_screen_gradien.png" alt="">
                 <img class="w-full" src="./images/first_screen_gradien.png" alt="">
                 <img class="w-full" src="./images/first_screen_gradien.png" alt="">
             </div>
+            <img src="./images/oval_1.svg" class="w-full absolute z-40 bottom-0 max-h-20 lg:max-h-full" alt="">
             <div
-                class="z-10 absolute top-64 left-1/2 -translate-x-2/4 translate-y-0; text-white text-2xl font-light text-center max-w-[40vw]">
+                class="container flex-col z-10 absolute top-32 md:top-64 left-1/2 -translate-x-2/4 translate-y-0; text-white text-sm md:text-lg lg:text-3xl font-light text-center w-full md:max-w-[90vw] lg:max-w-[800px]">
                 Ваш клієнт
                 може і не знати, що йому потрібна книга, але якщо він тримає її в руках <br><span class="font-bold"> —
                     то эфект завжди WOW</span></div>
-            <iframe width="100%" class="video h-[100%] absolute z-[-1] top-[15vw]"
-                src="https://www.youtube.com/embed/-KAFxe8rdzY?autoplay=1&loop=1&enablejsapi=1&&playerapiid=featuredytplayer&controls=0&modestbranding=1&rel=0&showinfo=0&color=white&iv_load_policy=3&theme=light&wmode=transparent&origin=https://book.malevichpro.com&playlist=-KAFxe8rdzY&mute=1"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <div class="video-container absolute top-44 md:top-[15vw] w-full pt-[56%] overflow-hidden">
+                <iframe class="video absolute top-0 left-0 h-full w-full"
+                    src="https://www.youtube.com/embed/-KAFxe8rdzY?autoplay=1&loop=1&enablejsapi=1&modestbranding=1&rel=0&showinfo=0&mute=1&playlist=-KAFxe8rdzY&controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </div>
-        <img src="./images/oval_1.svg" class="w-full h-32 relative" alt="">
-        <div class="bg-[#F3F3F3] hidden">
+        <section class="overflow-hidden">
             <div class="container">
-                <p class="text-center m-auto text-2xl opacity-50 max-w-[40vw]">Фотокниги дозволяють відчути
+                <p class="text-center m-auto text-sm md:text-2xl lg:text-3xl opacity-50 w-full md:max-w-[750px]">
+                    Фотокниги
+                    дозволяють відчути
                     клієнтам всю цінність фотографії, і як
                     наслідок, краще зрозуміти важливість вашої роботи</p>
             </div>
-            <img src="./images/screen_graphic.svg" class="pt-20" alt="">
-        </div>
-        <div class="bg-[#F3F3F3] hidden">
-            <div class="container flex-col">
-                <h2 class="text-6xl title text-center mb-5 max-w-[50%]">Ми прихильники вiчної класики</h2>
-                <p class="text-center m-auto text-2xl opacity-50 max-w-[60vw] mb-10">Тренди швидко згасають і через роки
-                    виглядають безглуздо, але простота і лаконічність завжди будуть у
-                    моді</p>
-                <div class="flex gap-6">
-                    <div class="bg-[#E5E5E5]">
-                        <img src="./images/book-01.png" class="drop-shadow-sm" alt="">
-                        <div class="uppercase">Classic</div>
-                        <div class="">collection</div>
-                    </div>
-                    <div class="bg-[#E5E5E5]">
-                        <img src="./images/book-02.png" class="drop-shadow-sm" alt="">
-                        <div class="uppercase">Photo Art</div>
-                        <div class="">collection</div>
-                    </div>
-                    <div class="bg-[#E5E5E5]">
-                        <img src="./images/book-03.png" class="drop-shadow-sm" alt="">
-                        <div class="uppercase">Grandwood</div>
-                        <div class="">collection</div>
+            <img src="./images/screen_graphic.svg" class="pt-10 md:pt-20 max-h-[1200px] relative -right-[20%]" alt="">
+        </section>
+        <section class="container w-full flex-col pb-48">
+            <h2 class="text-3xl md:text-4xl lg:text-6xl title text-center mb-5 lg:max-w-[50%]">Ми прихильники вiчної
+                класики</h2>
+            <p class="text-center m-auto text-base md:text-2xl opacity-50 md:max-w-[60vw] mb-10">Тренди швидко згасають
+                і
+                через роки
+                виглядають безглуздо, але простота і лаконічність завжди будуть у
+                моді</p>
+            <div class="flex flex-col lg:flex-row items-center gap-24 w-[90vw] xl:w-full justify-between">
+                <div class="bg-[#E5E5E5] p-6 pt-24 flex flex-col max-w-[200px] md:max-w-[300px] lg:max-w-[200px]">
+                    <img src="./images/book-01.png" class="scale-[2] md:scale-[1.7] lg:scale-[2]" alt="">
+                    <div class="title text-3xl mt-14">Classic</div>
+                    <div class="opacity-60">collection</div>
+                </div>
+                <div class="bg-[#E5E5E5] p-6 pt-24 flex flex-col max-w-[200px] md:max-w-[300px] lg:max-w-[200px]">
+                    <img src="./images/book-02.png" class="scale-[2] md:scale-[1.7] lg:scale-[2]" alt="">
+                    <div class="title text-3xl mt-14">PhotoArt</div>
+                    <div class="opacity-60">collection</div>
+                </div>
+                <div class=" bg-[#E5E5E5] p-6 pt-24 flex flex-col max-w-[200px] md:max-w-[300px] lg:max-w-[200px]">
+                    <img src="./images/book-03.png" class="scale-[2] md:scale-[1.7] lg:scale-[2]" alt="">
+                    <div class="title text-3xl mt-14">Grandwood</div>
+                    <div class="opacity-60">collection</div>
+                </div>
+            </div>
+        </section>
+        <section class="container flex flex-col-reverse md:flex-row gap-y-8 items-center">
+            <div class="basis-3/4 relative md:-left-32"><img src="./images/people_img.jpg" alt=""></div>
+            <p class="text-base md:text-xl lg:text-2xl opacity-50 basis-1/4 text-center">Обираючи класику, можете бути
+                впевнені - вашою роботою будуть захоплюватися багато поколінь</p>
+        </section>
+        <section class="container flex-col">
+            <h2 class="text-3xl md:text-4xl lg:text-6xl title text-center mb-5 md:max-w-[50%]">Асортимент</h2>
+            <p class="text-center m-auto text-base md:text-2xl opacity-50 md:max-w-[60vw] mb-10">Правильний, лаконічний
+                асортимент –
+                основа успішних продажів</p>
+            <div
+                class="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-y-14 gap-x-8 mb-14">
+                <div class="group bg-[#E5E5E5] pt-6 w-full max-w-72 text-center pb-7 flex flex-col items-center">
+                    <div class="title text-2xl">Eконом</div>
+                    <img class="transform group-hover:scale-110 transition-transform duration-500"
+                        src="./images/photobook-01.png" alt="">
+                    <a href="#" class="text-xs underline opacity-40">Детальнiше</a>
+                </div>
+                <div class="group bg-[#E5E5E5] pt-6 w-full max-w-72 text-center pb-7 flex flex-col items-center">
+                    <div class="title text-2xl">Стандарт</div>
+                    <img class="transform group-hover:scale-110 transition-transform duration-500"
+                        src="./images/photobook-02.png" alt="">
+                    <a href="#" class="text-xs underline opacity-40">Детальнiше</a>
+                </div>
+                <div class="group bg-[#E5E5E5] pt-6 w-full max-w-72 text-center pb-7 flex flex-col items-center">
+                    <div class="title text-2xl">Преміум</div>
+                    <img class="transform group-hover:scale-110 transition-transform duration-500"
+                        src="./images/photobook-03.png" alt="">
+                    <a href="#" class="text-xs underline opacity-40">Детальнiше</a>
+                </div>
+                <div class="group bg-[#4A4A4A] pt-6 w-full max-w-72 text-center flex flex-col justify-between">
+                    <div class="title text-2xl text-white">Eксклюзив</div>
+                    <a href="#" class="text-xs underline opacity-40 text-white">Детальнiше</a>
+                    <img class="group-hover:opacity-50 transition-opacity duration-500" src="./images/super.png" alt="">
+                </div>
+            </div>
+            <div class="bg-[#4A4A4A] p-4">
+                <div
+                    class="py-4 px-2 md:px-8 lg:px-20 border border-main-color flex flex-col md:flex-row items-center justify-center gap-10">
+                    <img class="" src="./images/eye.png" alt="">
+                    <div class="text-white title text-center text-lg md:text-2xl tracking-wide font-light">Цiни доступнi
+                        лише пiсля
+                        <a href="#" class="underline text-main-color font-normal">реєстрації</a> <br> а реєстрація
+                        доступна лише фотографам
                     </div>
                 </div>
             </div>
-            <div class="flex items-center">
-                <img class="relative -left-[5vw] max-h-[45vw]" src="./images/people_img.jpg" alt="">
-                <p class="text-2xl opacity-50 max-w-[60vw] mb-8">Обираючи класику, можете бути впевнені - вашою роботою
-                    будуть захоплюватися багато поколінь</p>
-            </div>
-            <div class="container flex-col">
-                <h2 class="text-6xl title text-center mb-5 max-w-[50%]">Асортимент</h2>
-                <p class="text-center m-auto text-2xl opacity-50 max-w-[60vw] mb-10">Правильний, лаконічний асортимент –
-                    основа успішних продажів</p>
-                <div class="flex gap-6 mb-14">
-                    <div class="bg-[#E5E5E5]">
-                        <div class="uppercase">Eконом</div>
-                        <img src="./images/photobook-01.png" alt="">
-                        <div class="">Детальнiше</div>
-                    </div>
-                    <div class="bg-[#E5E5E5]">
-                        <div class="uppercase">Стандарт</div>
-                        <img src="./images/photobook-02.png" alt="">
-                        <div class="">Детальнiше</div>
-                    </div>
-                    <div class="bg-[#E5E5E5]">
-                        <div class="uppercase">Преміум</div>
-                        <img src="./images/photobook-03.png" alt="">
-                        <div class="">Детальнiше</div>
-                    </div>
-                    <div class="bg-[#E5E5E5]">
-                        <div class="uppercase">Eксклюзив</div>
-                        <div class="">Детальнiше</div>
-                        <img src="./images/super.png" alt="">
-                    </div>
-                </div>
-                <div class="bg-[#4A4A4A] p-4 min-w-[60vw]">
-                    <div class="py-4 px-[15%] border border-main-color flex items-center justify-between">
-                        <img src="./images/eye.png" alt="">
-                        <div class="text-white text-lg font-light uppercase">Цiни доступнi лише пiсля <a href="#"
-                                class="underline text-main-color font-normal">реєстрації</a> <br> а реєстрація доступна
-                            лише
-                            фотографам
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="absolute max-w-[1250px] m-auto flex px-24 flex-col items-start">
-                <h2 class="text-7xl title my-52">Першокласнi <br> матерiали</h2>
-                <ul class="doted-list text-xl flex flex-col opacity-50">
-                    <li class="max-w-[25vw] ml-[10vw]">
-                        Ви отримаєте надійну книгу, яка приємно лежить в руках і не деформується
-                        через роки
-                    </li>
-                    <li class="max-w-[25vw] ml-[30vw]">Використовуємо тільки якісні матеріали, які виглядають дорого і
-                        презентабельно
-                    </li>
-                    <li class="max-w-[25vw] ml-[45vw]">Щільні листи, які не розклеюються і не мнуться</li>
-                </ul>
-            </div>
-            <img src="./images/photoalbom.png" class="max-w-[80%] ml-auto" alt="">
+        </section>
+        <section class="absolute container -translate-x-2/4 left-2/4 flex flex-col items-start">
+            <h2 class="text-3xl md:text-5xl lg:text-7xl title lg:my-52">Першокласнi <br> матерiали</h2>
+            <ul class="doted-list text-sm lg:text-xl flex flex-col gap-20">
+                <li class="md:max-w-[25vw] md:ml-[10vw]">
+                    Ви отримаєте надійну книгу, яка приємно лежить в руках і не деформується
+                    через роки
+                </li>
+                <li class="md:max-w-[25vw] md:ml-[30vw]">Використовуємо тільки якісні матеріали, які виглядають дорого і
+                    презентабельно
+                </li>
+                <li class="md:max-w-[25vw] md:ml-[45vw]">Щільні листи, які не розклеюються і не мнуться</li>
+            </ul>
+        </section>
+        <img src="./images/photoalbom.png" class="max-w-[80%] ml-auto" alt="">
+        <div class="hidden">
             <div class="container flex-col">
                 <div class="flex justify-between w-full mb-8">
                     <div class="uppercase text-2xl max-w-[50%] font-medium opacity-75">Безліч кольорів та текстур, що

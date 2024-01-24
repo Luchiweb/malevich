@@ -57,9 +57,17 @@ body {
     list-style-type: disc
 }
 
+.doted-list li::marker {
+    color: var(--main-color);
+}
+
 .secod-screen {
     position: relative;
     top: max(-13vw, -120px)
+}
+
+.swiper {
+    z-index: 20 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -105,6 +113,14 @@ body {
 .text-block {
     margin-top: 10px;
     max-width: 260px;
+}
+
+.video {
+    width: 120%;
+    height: 150%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .tabs {
