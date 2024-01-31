@@ -1,66 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-    :root {
-        --main-color: #bda23e;
-    }
-}
-
-@layer components {
-    .container {
-        @apply px-4 md:px-10 flex items-center justify-between max-w-[1250px] mx-auto;
-    }
-
-    .button {
-        @apply uppercase tracking-wider leading-5 text-[10px] md:text-xs rounded-md transition-colors duration-300 disabled:pointer-events-none disabled:opacity-50 text-white px-2 py-1 md:px-4 md:py-2 bg-black hover:bg-zinc-800;
-    }
-
-    .primary-button {
-        @apply bg-main-color hover:bg-[#C7AE4C];
-    }
-
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.title {
-    font-family: 'Cormorant Unicase', serif;
-    line-height: 1.2;
-}
-
-.header,
-.first-screen {
-    background-image: url("./images/bg-03.jpg");
-}
-
-.icon-list li {
-    list-style-type: none;
-    background-image: url('./images/galka.svg');
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    background-position: 0 center;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    padding-left: 45px;
-}
-
-.doted-list li {
-    list-style-type: disc
-}
-
-.doted-list li::marker {
-    color: var(--main-color);
-}
-
 .secod-screen {
     position: relative;
     top: max(-13vw, -120px)
@@ -139,9 +76,7 @@ body {
 }
 
 .tabs label {
-    padding: 15px;
     color: #818181;
-    font-size: large;
 }
 
 .tabs input[type="radio"]:checked+label+.tab {
