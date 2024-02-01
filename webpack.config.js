@@ -17,7 +17,7 @@ module.exports = {
         compress: true,
         port: 8080,
         historyApiFallback: true,
-        watchFiles: './src/index.html',
+        watchFiles: ['./src/index.html', './src/earnings.html'],
     },
 
     module: {
@@ -64,6 +64,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/earnings.html',
+            filename: 'earnings.html'
         }),
         new CopyWebpackPlugin({
             patterns: [
