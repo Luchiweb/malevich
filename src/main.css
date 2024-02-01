@@ -8,6 +8,7 @@
 @layer base {
     :root {
         --main-color: #bda23e;
+        --bg-color: #4A4A4A;
     }
 }
 
@@ -26,6 +27,10 @@
 
     .big-button {
         @apply text-lg px-12 py-3;
+    }
+
+    .link {
+        @apply text-main-color
     }
 
 }
